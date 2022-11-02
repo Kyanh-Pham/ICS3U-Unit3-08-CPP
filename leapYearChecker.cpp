@@ -21,20 +21,26 @@ int main() {
         if (yearInt > 0) {
             if (yearInt % 4 == 0) {
                 if (yearInt % 100 != 0) {
-                    std::cout << "" << yearString << " is a leap year." << std::endl;
+                    std::cout << "" << yearString <<
+                     " is a leap year." << std::endl;
                 } else if (yearInt % 400 != 0) {
-                    std::cout << "" << yearInt << " is not a leap year." << std::endl;
+                    std::cout << "" << yearInt <<
+                     " is not a leap year." << std::endl;
                     } else {
-                        std::cout << "" << yearString << " is a leap year." << std::endl;
+                        std::cout << "" << yearString <<
+                         " is a leap year." << std::endl;
                     }
             } else {
-                std::cout << "" << yearString << " is not a leap year." << std::endl;
+                std::cout << "" << yearString <<
+                 " is not a leap year." << std::endl;
             }
         } else {
-            std::cout << yearString << " is not a valid year." << std::endl;
+            std::cout << yearString <<
+             " is not a valid year." << std::endl;
         }
     } catch (std::invalid_argument) {
-        std::cout << "" << yearString << " is not a valid input." << std::endl;
+        std::cout << "" << yearString <<
+         " is not a valid input." << std::endl;
     }
 
     std::cout << std::endl;
